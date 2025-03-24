@@ -1,0 +1,198 @@
+{
+	"SublimeLinter":
+	{
+		"linters":
+		{
+			"eslint":
+			{
+				"@disable": false,
+				"args":
+				[
+					"--config",
+					"${file_path}/.eslintrc",
+					"--config",
+					"${project}/.eslintrc"
+				],
+				"chdir": "${project}",
+				"excludes":
+				[
+				]
+			},
+			"markdownlint":
+			{
+				"@disable": false,
+				"args":
+				[
+					"--config",
+					"${file_path}/.markdownlint.json",
+					"--config",
+					"${project}/.markdownlint.json"
+				],
+				"chdir": "${project}",
+				"excludes":
+				[
+				]
+			},
+			"stylelint":
+			{
+				"@disable": false,
+				"args":
+				[
+					"--config",
+					"${file_path}/.stylelintrc.js",
+					"--config",
+					"${project}/.stylelintrc.js"
+				],
+				"chdir": "${project}",
+				"excludes":
+				[
+				]
+			}
+		},
+		"paths":
+		{
+			"linux":
+			[
+				"${project}/node_modules/.bin",
+				"/home/jeff/.nodenv/shims"
+			],
+			"osx":
+			[
+				"${project}/node_modules/.bin",
+				"/Users/jeff/.nodenv/shims"
+			],
+			"windows":
+			[
+			]
+		}
+	},
+	"build_systems":
+	[
+		{
+			"cmd":
+			[
+				"make",
+				"test"
+			],
+			"name": "test",
+			"working_directory": "$project"
+		}
+	],
+	"color_helper_palettes":
+	[
+		{
+			"colors":
+			[
+				"#d1001aff"
+			],
+			"name": "Naughty Girl"
+		}
+	],
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"*.zip",
+				"*.tar.gz",
+				".LSOverride",
+				"*.sublime-*",
+				"*.bck",
+				"*.webm",
+				"*.mp4",
+				"*.png",
+				"*.xcf",
+				"npm-debug.log",
+				"yarn.lock",
+				"package-lock.json",
+				"npm-shrinkwrap.json",
+				"*.map",
+				"src/app/config/jspm.config.js",
+				"src/app/config/jspm.browser.js",
+				"src/app/config/jspm.node.js",
+				"*.min.css",
+				"*.min.js"
+			],
+			"folder_exclude_patterns":
+			[
+				"dist",
+				"backups",
+				".git-crypt",
+				".esm-cache",
+				".git",
+				"dist",
+				"docs",
+				"src/images",
+				"src/demos",
+				"logs",
+				"tmp",
+				".tmp",
+				"node_modules",
+				"*.sass-cache",
+				"*.bck*",
+				"public",
+				"db/mongodb",
+				"design",
+				"jspm_packages",
+				".npmbundle"
+			],
+			"follow_symlinks": false,
+			"path": "."
+		},
+    {
+      "name": "Libraries",
+      "path": "../libraries"
+    }
+	],
+	"settings":
+	{
+		"chrome_remote_port": "9090",
+		"chrome_url": "https://naughty.test/",
+		"ensure_newline_at_eof_on_save": true,
+		"tab_size": 2,
+		"translate_tabs_to_spaces": true
+	},
+	"syntax_override":
+	{
+		"\\$":
+		[
+			"DotENV"
+		],
+		"\\.css$":
+		[
+			"Syntax Highlighting for PostCSS",
+			"PostCSS"
+		],
+		"\\.html$":
+		[
+			"HTML",
+			"HTML"
+		],
+		"\\.js$":
+		[
+		],
+		"\\.json$":
+		[
+			"User",
+			"JSON"
+		],
+		"\\.md$":
+		[
+			"Markdown Extended",
+			"Syntaxes",
+			"Markdown Extended"
+		],
+		"\\.pug$":
+		[
+			"Pug",
+			"Syntaxes",
+			"Pug"
+		],
+		"\\.scss$":
+		[
+			"Syntax Highlighting for PostCSS",
+			"Syntaxes",
+			"PostCSS"
+		]
+	}
+}
