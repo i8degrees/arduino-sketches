@@ -26,8 +26,8 @@ const char* password = "moderncello815";
 #define DHTPIN 4
 
 // Uncomment the type of sensor in use:
-#define DHTTYPE    DHT11     // DHT 11
-//#define DHTTYPE DHT22  // DHT 22 (AM2302)
+//#define DHTTYPE    DHT11     // DHT 11
+#define DHTTYPE DHT22  // DHT 22 (AM2302)
 //#define DHTTYPE    DHT21     // DHT 21 (AM2301)
 
 DHT dht(DHTPIN, DHTTYPE);
@@ -70,7 +70,7 @@ const char index_html[] PROGMEM = R"rawliteral(
   </style>
 </head>
 <body>
-  <h2>ESP8266 DHT11 Server</h2>
+  <h2>ESP8266 DHT22 Server</h2>
   <p>
     <i class="fas fa-thermometer-half" style="color:#059e8a;"></i>
     <span class="dht-labels">Temperature</span>
