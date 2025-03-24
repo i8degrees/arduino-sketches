@@ -1,0 +1,35 @@
+"/home/jeff/.arduino15/packages/esp8266/tools/python3/3.7.2-post1/python3" -I "/home/jeff/.arduino15/packages/esp8266/hardware/esp8266/3.1.2/tools/upload.py" --chip esp8266 --port "/dev/ttyUSB0" --baud "115200" ""  --before default_reset --after hard_reset write_flash 0x0 "/home/jeff/.cache/arduino/sketches/CA736304543446038DDD5884775F2B65/dht11.ino.bin"
+esptool.py v3.0
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP8266EX
+Features: WiFi
+Crystal is 26MHz
+MAC: e0:98:06:a2:ea:2b
+Uploading stub...
+Running stub...
+Stub running...
+Configuring flash size...
+Auto-detected Flash size: 4MB
+Flash params set to 0x0340
+Compressed 313312 bytes to 226848...
+Writing at 0x00000000... (7 %)
+  Writing at 0x00004000... (14 %)
+  Writing at 0x00008000... (21 %)
+  Writing at 0x0000c000... (28 %)
+  Writing at 0x00010000... (35 %)
+  Writing at 0x00014000... (42 %)
+  Writing at 0x00018000... (50 %)
+  Writing at 0x0001c000... (57 %)
+  Writing at 0x00020000... (64 %)
+  Writing at 0x00024000... (71 %)
+  Writing at 0x00028000... (78 %)
+  Writing at 0x0002c000... (85 %)
+  Writing at 0x00030000... (92 %)
+  Writing at 0x00034000... (100 %)
+  Wrote 313312 bytes (226848 compressed) at 0x00000000 in 19.9 seconds (effective 125.7 kbit/s)...
+  Hash of data verified.
+
+  Leaving...
+  Hard resetting via RTS pin...
+
